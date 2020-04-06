@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/parentUri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前的父文件夹uri为：,文件夹名称为：" />
+
+
+        <TextView
+            android:id="@+id/parentUriPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="检测对uri的操作权限结果：" />
+
+        <Button
+            android:id="@+id/createFileTree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在当前uri下创建文件夹" />
+
+        <EditText
+            android:id="@+id/createFIleTreeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="创建的文件夹名字，不输入默认为sample"
+            android:minHeight="56dp" />
+
+        <Button
+            android:id="@+id/createFileForImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="创建图片文件(名字test.jpg)" />
+
+        <Button
+            android:id="@+id/createFileForTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="创建txt文件(名字test.txt)" />
+
+        <Button
+            android:id="@+id/createFileForVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="创建video文件(名字test.mp4)" />
+
+        <Button
+            android:id="@+id/createFileForAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="创建audio文件(名字test.mp3)" />
+
+        <Button
+            android:id="@+id/createFileForApk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="创建apk文件(名字test.apk)" />
+
+        <Button
+            android:id="@+id/selectFileDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="选择文件删除他" />
+
+        <Button
+            android:id="@+id/queryFileForParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="通过名称在当前文件夹里寻找文件uri" />
+
+        <EditText
+            android:id="@+id/queryFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="需要寻找的的文件名字，如果是文件需要带上后缀"
+            android:minHeight="56dp" />
+
+        <TextView
+            android:id="@+id/queryFileResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="寻找的结果： uri为：是否是目录： " />
+    </LinearLayout>
+</ScrollView>

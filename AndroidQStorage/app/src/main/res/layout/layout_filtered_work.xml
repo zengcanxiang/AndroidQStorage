@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/saveUriShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前保存的uri是:" />
+
+    <Button
+        android:id="@+id/validUri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校验当前uri的有效性" />
+
+    <Button
+        android:id="@+id/saveFileToPrivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存文件到应用私有目录" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="应用数据目录/cache/sample.txt" />
+
+    <Button
+        android:id="@+id/saveFileToPublic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存文件到公共目录" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/publicSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/saveFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="保存的文件是：" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/saveFileToCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存文件到自定义目录" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义目录:外部存储/AndroidQCustomSample" />
+
+    <Button
+        android:id="@+id/showPublic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="访问公共目录内容" />
+
+    <Button
+        android:id="@+id/showCustomSAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="访问自定义目录内容" />
+
+</LinearLayout>

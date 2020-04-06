@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/saveUriShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前保存的uri是:" />
+
+    <Button
+        android:id="@+id/openSAFFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过SAF界面选择文件(没有传入需同时保留持久化权限)" />
+
+    <CheckBox
+        android:id="@+id/selectMultiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否选择多个文件" />
+
+    <EditText
+        android:id="@+id/mimeType"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="输入mimeType，不输入则默认为*/*" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="示例：text/plain，image/png, image/jpeg" />
+
+    <Button
+        android:id="@+id/openSAFFileTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过SAF界面选择文件夹(传入了同时保留持久化权限)" />
+
+    <Button
+        android:id="@+id/requestUriPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="使用SAF校验对一个uri是否有权限" />
+
+    <EditText
+        android:id="@+id/requestUri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入uri，不输入则默认为上面获取的uri,多个的话验证第一个"
+        android:minHeight="56dp" />
+
+    <TextView
+        android:id="@+id/requestPermissionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校验的uri: 结果是：" />
+
+    <Button
+        android:id="@+id/createFileToSAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="通过SAF接口操作文件" />
+
+</LinearLayout>
